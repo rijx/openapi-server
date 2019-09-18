@@ -1,0 +1,12 @@
+stages:
+  - verify
+
+lint:
+  stage: verify
+  image: node:10
+  artifacts:
+    paths:
+      - yarn.lock
+  script:
+    - yarn
+    - yarn run lint

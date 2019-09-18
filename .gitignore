@@ -90,3 +90,7 @@ public
 
 # DynamoDB Local files
 .dynamodb/
+
+# Lock files
+package-lock.json
+yarn.lock
