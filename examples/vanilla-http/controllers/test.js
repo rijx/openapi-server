@@ -1,4 +1,4 @@
-const { response } = require("../../../lib/openapi/response");
+const { response } = require("../../../lib/framework/response");
 
 function helloWorld({ name, ["User-Agent"]: userAgent, x }, req) {
   return response({
