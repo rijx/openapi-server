@@ -4,11 +4,12 @@ const qs = require("qs");
 
 const createMiddleware = require("../../lib/middleware");
 
+const auth = require("./auth");
 const controllers = require("./controllers");
 const handlers = require("./handlers");
 const spec = require("./spec");
 
-const apiHandler = createMiddleware(spec, controllers);
+const apiHandler = createMiddleware(spec, controllers, auth);
 
 const server = http.createServer((req, res) => {
   const parsedUrl = urlTool.parse(req.url);

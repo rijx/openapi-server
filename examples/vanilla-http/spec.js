@@ -42,7 +42,20 @@ module.exports = {
               }
             }
           }
-        }
+        },
+        security: [
+          {
+            bearerAuth: ["test:hello"]
+          }
+        ]
+      }
+    }
+  },
+  components: {
+    securitySchemes: {
+      bearerAuth: {
+        type: "http",
+        scheme: "bearer"
       }
     }
   }
