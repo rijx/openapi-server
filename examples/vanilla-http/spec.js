@@ -45,7 +45,7 @@ module.exports = {
         },
         security: [
           {
-            bearerAuth: ["test:hello"]
+            demoAuth: ["test:hello"]
           }
         ]
       }
@@ -53,7 +53,7 @@ module.exports = {
   },
   components: {
     securitySchemes: {
-      bearerAuth: {
+      demoAuth: {
         type: "http",
         scheme: "bearer"
       }

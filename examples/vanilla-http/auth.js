@@ -1,7 +1,7 @@
-function bearerAuth(token, permissions, req) {
+function demoAuth(token, permissions, req) {
   return Promise.resolve(token == "test");
 }
 
 module.exports = {
-  bearerAuth
+  demoAuth
 };
