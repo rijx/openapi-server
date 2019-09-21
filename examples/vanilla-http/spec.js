@@ -34,10 +34,13 @@ module.exports = {
         responses: {
           200: {
             content: {
-              schema: {
-                type: "object",
-                properties: {
-                  message: { type: "string" }
+              "text/plain": {},
+              "application/json": {
+                schema: {
+                  type: "object",
+                  properties: {
+                    message: { type: "string" }
+                  }
                 }
               }
             }

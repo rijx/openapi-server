@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "ajv": "^6.10.2",
+    "fast-json-stringify": "^1.15.4",
     "find-my-way": "^2.1.1",
     "qs": "^6.8.0"
   },
