@@ -1,6 +1,9 @@
 {
   "name": "openapi-server",
   "version": "0.1.5",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "lint": "eslint lib",
     "start": "node lib"
