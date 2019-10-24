@@ -1,6 +1,6 @@
 {
   "name": "openapi-server",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "files": [
     "lib"
   ],
@@ -12,6 +12,7 @@
     "ajv": "^6.10.2",
     "fast-json-stringify": "^1.15.4",
     "find-my-way": "^2.1.1",
+    "openapi-schema-to-json-schema": "^2.2.0",
     "qs": "^6.8.0"
   },
   "devDependencies": {
