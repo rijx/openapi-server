@@ -25,7 +25,7 @@ const controllers = {
 
 const spec = {
   paths: {
-    "/auth": {
+    "/login": {
       post: {
         tags: ["auth"],
         operationId: "login",
