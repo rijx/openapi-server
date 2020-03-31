@@ -1,7 +1,8 @@
 {
   "name": "openapi-server",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "Framework agnostic OpenAPI server",
+  "license": "MIT",
   "files": [
     "lib"
   ],
