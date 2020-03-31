@@ -1,6 +1,34 @@
 # openapi-server
 
+Framework agnostic OpenAPI server.
+
+## How is this different from existing OpenAPI server frameworks?
+
+Existing frameworks assume a setting, like being integrated into Express.
+
+This framework is completely agnostic and only assumes Node request and response objects to be used.
+
 ## Example
+
+### Controller
+
+In this example request variables are still used, but the parameters defined in the OpenAPI spec are passed in one object. Regardless whether they came from the path, headers or query string.
+
+```js
+const { response } = require("openapi-server-framework");
+
+function helloWorld({ name, ["User-Agent"]: userAgent, x }, req) {
+  return response({
+    message: `Hello ${name}! You're on ${req.path} (Your IP is ${req.connection.remoteAddress} and your User-Agent is ${userAgent}, x = ${x})`
+  });
+}
+
+module.exports = {
+  helloWorld
+};
+```
+
+### Full example including authentication
 
 ```js
 const bodyParser = require("body-parser");

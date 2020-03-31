@@ -1,6 +1,7 @@
 {
   "name": "openapi-server",
-  "version": "0.2.13",
+  "version": "0.2.14",
+  "description": "Framework agnostic OpenAPI server",
   "files": [
     "lib"
   ],
