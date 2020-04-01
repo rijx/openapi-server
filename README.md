@@ -15,7 +15,7 @@ This framework is completely agnostic and only assumes Node request and response
 In this example request variables are still used, but the parameters defined in the OpenAPI spec are passed in one object. Regardless whether they came from the path, headers or query string.
 
 ```js
-const { response } = require("openapi-server-framework");
+const { response } = require("openapi-server");
 
 function helloWorld({ name, ["User-Agent"]: userAgent, x }, req) {
   return response({
